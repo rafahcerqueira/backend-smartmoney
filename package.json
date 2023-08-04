@@ -1,8 +1,8 @@
 {
   "name": "backend-nest",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Backend NestJS Smartmoney",
+  "author": "Rafael Cerqueira",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
