@@ -15,7 +15,7 @@
 <a href="https://nodejs.org/en" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="50" alt="Node Logo" /></a>
 <a href="https://jwt.io/" target="blank"><img src="https://seeklogo.com/images/J/jwt-logo-65D86B4640-seeklogo.com.png" width="50" alt="Jwt Logo" /></a>
 
-## Instalação
+## Instalação de dependências
 
 ```bash
 $ npm install

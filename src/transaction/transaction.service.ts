@@ -9,14 +9,12 @@ export class TransactionService {
   constructor(private readonly prisma: PrismaService) {}
 
   async create(createTransactionDto: CreateTransactionDto) {
-    const createdTransaction = await this.prisma.transaction.create({
+    return await this.prisma.transaction.create({
       data: {
         id: randomUUID(),
         ...createTransactionDto,
       },
     });
-
-    return createdTransaction;
   }
 
   findAll() {
@@ -30,12 +28,10 @@ export class TransactionService {
   }
 
   async update(id: string, updateTransactionDto: UpdateTransactionDto) {
-    const updatedTransaction = await this.prisma.transaction.update({
+    return await this.prisma.transaction.update({
       where: { id },
       data: { ...updateTransactionDto },
     });
-
-    return updatedTransaction;
   }
 
   async remove(id: string) {
