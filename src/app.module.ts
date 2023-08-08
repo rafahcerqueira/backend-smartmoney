@@ -8,9 +8,17 @@ import { PrismaModule } from './prisma/prisma.module';
 import { JwtAuthGuard } from './auth/guards/jwt-auth.guard';
 import { TransactionModule } from './transaction/transaction.module';
 import { CardModule } from './card/card.module';
+import { GoalModule } from './goal/goal.module';
 
 @Module({
-  imports: [PrismaModule, UserModule, AuthModule, TransactionModule, CardModule],
+  imports: [
+    PrismaModule,
+    UserModule,
+    AuthModule,
+    TransactionModule,
+    CardModule,
+    GoalModule,
+  ],
   controllers: [AppController],
   providers: [
     AppService,

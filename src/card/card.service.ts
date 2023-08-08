@@ -36,10 +36,12 @@ export class CardService {
   }
 
   async remove(id: string) {
-    await this.prisma.card.delete({
-      where: { id },
-    });
-
-    return { message: 'Card deleted successfully' };
+    return await this.prisma.card
+      .delete({
+        where: { id },
+      })
+      .then(() => {
+        return { message: 'Card deleted successfully' };
+      });
   }
 }
