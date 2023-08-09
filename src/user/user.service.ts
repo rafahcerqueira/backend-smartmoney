@@ -18,9 +18,9 @@ export class UserService {
     const createdUser = await this.prisma.user.create({
       data: {
         id: randomUUID(),
+        name: user.name,
         email: user.email,
         password: user.password,
-        name: user.name,
       },
     });
 
